@@ -1,11 +1,15 @@
 
-# Benchmarks for Object Detection in Aerial Images
+# DEA-Net: Dynamic Enhancement Anchor for Object Detection in Aerial Images
+In this paper, we present an effective Dynamic Enhancement Anchor~(DEA) network to construct a novel training sample generator. Different from other state-of-the-art techniques, the proposed network leverages a sample discriminator to realize interactive sample screening between an anchor-based unit and an anchor-free unit to generate eligible samples. Besides, multi-task joint training with a conservative anchor-based inference scheme enhances the performance of the proposed model while suppressing computational complexity. The proposed scheme supports both oriented and horizontal object detection tasks. Extensive experiments on two challenging aerial benchmarks (\ie, DOTA and HRSC2016) indicate that our method achieves state-of-the-art performance in accuracy with moderate inference speeds and computational overhead for training.
 
 ## Introduction
 This codebase is created to build benchmarks for object detection in aerial images.
 It is modified from [mmdetection](https://github.com/open-mmlab/mmdetection).
 The master branch works with **PyTorch 1.1** or higher. If you would like to use PyTorch 0.4.1,
 please checkout to the [pytorch-0.4.1](https://github.com/open-mmlab/mmdetection/tree/pytorch-0.4.1) branch.
+
+## Results
+
 
 ![detected_results](results.jpg)
 ### Main Features
