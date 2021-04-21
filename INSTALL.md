@@ -30,12 +30,7 @@ conda install cython
 
 b. Install PyTorch stable or nightly and torchvision following the [official instructions](https://pytorch.org/).
 
-c. Clone the AerialDetection repository.
-
-```shell
-git clone https://github.com/dingjiansw101/AerialDetection.git
-cd AerialDetection
-```
+c. download the AerialDetection repository.
 
 d. Compile cuda extensions.
 
