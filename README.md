@@ -9,89 +9,33 @@ The master branch works with **PyTorch 1.1** or higher. If you would like to use
 please checkout to the [pytorch-0.4.1](https://github.com/open-mmlab/mmdetection/tree/pytorch-0.4.1) branch.
 
 ## Results
+Visualization results for oriented object detection on the test set of DOTA.
+![Different class results](/show/show_all.png)
 
-
-![detected_results](results.jpg)
-### Main Features
-To adapt to object detection in aerial images, this repo has several unique and new features compared to the original [mmdetection](https://github.com/open-mmlab/mmdetection)
-- **Support Oriented Object Detection**
-    
-    In aerial images, objects are usually annotated by oriented bounding box (OBB).
-    To support oriented object detection, we implement OBB Head (OBBRoIHead and OBBDenseHead). 
-    Also, we provide functions to transfer mask predictions to OBBs.
-
-- **Cython Bbox Overlaps**
-    
-    Since one patch image with the size of 1024 &times; 1024 may contain over 1000 instances
-     in [DOTA](https://captain-whu.github.io/DOTA/), which make the bbox overlaps memroy consuming.
-     To avoid out of GPU memory, we calculate the bbox overlaps in cython. 
-     The speed of cython version is close to the GPU version.
-
-- **Rotation Augmentation**
-    
-    Since there are many orientation variations in aerial images, we implement the online rotation augmentation.
-    
-- **Rotated RoI Warping**
-
-    Currently, we implement two types of rotated RoI Warping (Rotated RoI Align and Rotated Position Sensitive RoI Align).
-
-   
-## License
-
-This project is released under the [Apache 2.0 license](LICENSE).
+Comparison to the baseline on DOTA for oriented object detection. The figures with blue boxes are the results of the baseline and pink boxes are the results of our proposed DEA-Net.
+![Baseline and DEA-Net results](/show/show_compare.png)
 
 ## Benchmark and model zoo
-
-- Results are available in the [Model zoo](MODEL_ZOO.md).
+ImageNet Pretrained Model from Pytorch
+- [ResNet50](https://drive.google.com/file/d/1mQ9S0FzFpPHnocktH0DGVysufGt4tH0M/view?usp=sharing)
+- [ResNet101](https://drive.google.com/file/d/1qlVf58T0fY4dddKst5i7-CL3DXhBi3Mp/view?usp=sharing)
+- [ResNet152](https://drive.google.com/file/d/1y08s30DdWUyaFU89vEpospMi8TjqrJIz/view?usp=sharing)  
 - You can find the detailed configs in configs/DOTA.
-- The trained models are available at [Google Drive](https://drive.google.com/drive/folders/1IsVLm7Yrwo18jcx0XjnCzFQQaf1WQEv8?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1aPeoPaQ0BJTuCsGt_DrdmQ).
+- The trained models are available at [Google Drive](https://drive.google.com/file/d/1_Vz59vWp0YE36ashdMTWTn3KNZgtz6Ur/view?usp=sharing)
+
 ## Installation
-
-
-  Please refer to [INSTALL.md](INSTALL.md) for installation.
-
-
-    
+ Please refer to [INSTALL.md](INSTALL.md) for installation.    
+ 
 ## Get Started
-
 Please see [GETTING_STARTED.md](GETTING_STARTED.md) for the basic usage of mmdetection.
 
 ## Contributing
-
 We appreciate all contributions to improve benchmarks for object detection in aerial images. 
-
-
-## Citing
-
-If you use [DOTA](https://captain-whu.github.io/DOTA/) dataset, codebase or models in your research, please consider cite .
-
-```
-@inproceedings{xia2018dota,
-  title={DOTA: A large-scale dataset for object detection in aerial images},
-  author={Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  pages={3974--3983},
-  year={2018}
-}
-
-@article{chen2019mmdetection,
-  title={MMDetection: Open mmlab detection toolbox and benchmark},
-  author={Chen, Kai and Wang, Jiaqi and Pang, Jiangmiao and Cao, Yuhang and Xiong, Yu and Li, Xiaoxiao and Sun, Shuyang and Feng, Wansen and Liu, Ziwei and Xu, Jiarui and others},
-  journal={arXiv preprint arXiv:1906.07155},
-  year={2019}
-}
-
-@InProceedings{Ding_2019_CVPR,
-author = {Ding, Jian and Xue, Nan and Long, Yang and Xia, Gui-Song and Lu, Qikai},
-title = {Learning RoI Transformer for Oriented Object Detection in Aerial Images},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2019}
-}
-```
 
 ## Thanks to the Third Party Libs
 
 [Pytorch](https://pytorch.org/)
 
 [mmdetection](https://github.com/open-mmlab/mmdetection)
+
+[AerialDetection](https://github.com/dingjiansw101/AerialDetection)
