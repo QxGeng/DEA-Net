@@ -1,5 +1,5 @@
 
-# Anchor Retouching via Model Interaction forRobust Object Detection in Aerial Images
+# Anchor Retouching via Model Interaction for Robust Object Detection in Aerial Images
 In this paper, we present an effective Dynamic Enhancement Anchor (DEA) network to construct a novel training sample generator. Different from other state-of-the-art techniques, the proposed network leverages a sample discriminator to realize interactive sample screening between an anchor-based unit and an anchor-free unit to generate eligible samples. Besides, multi-task joint training with a conservative anchor-based inference scheme enhances the performance of the proposed model while suppressing computational complexity. The proposed scheme supports both oriented and horizontal object detection tasks. Extensive experiments on two challenging aerial benchmarks (i.e., DOTA and HRSC2016) indicate that our method achieves state-of-the-art performance in accuracy with moderate inference speeds and computational overhead for training.
 
 ## Introduction
