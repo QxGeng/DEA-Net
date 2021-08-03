@@ -10,10 +10,10 @@ please checkout to the [pytorch-0.4.1](https://github.com/open-mmlab/mmdetection
 
 ## Results
 Visualization results for oriented object detection on the test set of DOTA.
-![Different class results](/show/show_all.png)
+![Different class results](/res_show/show_all.png)
 
 Comparison to the baseline on DOTA for oriented object detection. The figures with blue boxes are the results of the baseline and pink boxes are the results of our proposed DEA-Net.
-![Baseline and DEA-Net results](/show/show_compare.png)
+![Baseline and DEA-Net results](/res_show/show_compare.png)
 
 ## Benchmark and model zoo
 ImageNet Pretrained Model from Pytorch
