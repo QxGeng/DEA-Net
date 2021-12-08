@@ -66,7 +66,7 @@ Examples:
 
 Assume that you have already downloaded the checkpoints to `work_dirs/`.
 
-1. Test Faster R-CNN.
+1. Test DEA.
 
 ```shell
 python tools/test.py configs/DOTA/faster_rcnn_RoITrans_r101_fpn_dea.py \
@@ -102,7 +102,7 @@ which is specified by `work_dir` in the config file.
 ### Train with a single GPU
 
 ```shell
-python tools/train.py ${CONFIG_FILE}
+python tools/train.py configs/DOTA/faster_rcnn_RoITrans_r101_fpn_dea.py
 ```
 
 If you want to specify the working directory in the command, you can add an argument `--work_dir ${YOUR_WORK_DIR}`.
