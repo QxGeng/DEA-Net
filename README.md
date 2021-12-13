@@ -21,7 +21,8 @@ ImageNet Pretrained Model from Pytorch
 - [ResNet101](https://drive.google.com/file/d/1qlVf58T0fY4dddKst5i7-CL3DXhBi3Mp/view?usp=sharing)
 - [ResNet152](https://drive.google.com/file/d/1y08s30DdWUyaFU89vEpospMi8TjqrJIz/view?usp=sharing)  
 - You can find the detailed configs in configs/DOTA.
-*[·-·]:The trained models are available at [Google Drive](https://drive.google.com/file/d/1_Vz59vWp0YE36ashdMTWTn3KNZgtz6Ur/view?usp=sharing)
+[^_^]:
+The trained models are available at [Google Drive](https://drive.google.com/file/d/1_Vz59vWp0YE36ashdMTWTn3KNZgtz6Ur/view?usp=sharing)
 
 ## Installation
  Please refer to [INSTALL.md](INSTALL.md) for installation.    
