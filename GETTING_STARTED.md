@@ -46,6 +46,8 @@ For data preparation of dota1.5, refer to "DOTA_devkit/prepare_dota1_5.py" and "
 
 ### Test a dataset
 
+1.Due to the optimization and supplementary experiments during the review process, we are sorting and optimizing the code and will update it as soon as possible.
+
 - [x] single GPU testing
 - [x] multiple GPU testing
 
@@ -67,7 +69,6 @@ Examples:
 Assume that you have already downloaded the checkpoints to `work_dirs/`.
 
 1. Test DEA.
-2. Due to the optimization and supplementary experiments during the review process, we are sorting and optimizing the code and will update it as soon as possible.
 
 ```shell
 python tools/test.py configs/DOTA/faster_rcnn_RoITrans_r101_fpn_dea.py \
