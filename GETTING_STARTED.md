@@ -3,6 +3,7 @@
 This page provides basic tutorials about the usage of mmdetection.
 For installation instructions, please see [INSTALL.md](INSTALL.md).
 
+Due to the optimization and supplementary experiments during the review process, we are sorting and optimizing the code and will update it as soon as possible.
 
 
 ## Prepare DOTA dataset.
@@ -46,7 +47,6 @@ For data preparation of dota1.5, refer to "DOTA_devkit/prepare_dota1_5.py" and "
 
 ### Test a dataset
 
-1.Due to the optimization and supplementary experiments during the review process, we are sorting and optimizing the code and will update it as soon as possible.
 
 - [x] single GPU testing
 - [x] multiple GPU testing
